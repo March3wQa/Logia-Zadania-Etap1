@@ -5,6 +5,7 @@ def o6(max):
     except ValueError as err:
         return err
     else:
+        ### GENERATOR LICZB PIERWSZYCH ###
         primes = [2, 3]
         n = 4
         for _ in range(max):
@@ -15,6 +16,9 @@ def o6(max):
             if tries == len(primes):
                 primes.append(n)
             n += 1
+        ##################################
+
+        ### SPRAWDZANIE PARY ###
         while primes[len(primes)-1] > max:
             del primes[len(primes)-1]
         else:
@@ -30,3 +34,4 @@ def o6(max):
                     c2 = primes[len(primes)-(k+1)]
                     if c1-6 == c2:
                         return c1
+        ########################
