@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>e37f74d1-2152-4811-a8d5-21a58175b5c6</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>Logia_Zadania_Etap1.py</StartupFile>
+    <StartupFile>Zadanie 1.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -21,7 +21,7 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Logia_Zadania_Etap1.py" />
+    <Compile Include="Zadanie 1.py" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
