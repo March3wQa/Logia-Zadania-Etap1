@@ -13,9 +13,9 @@ def domki(n):
 	t.fillcolor('yellow')
 	t.pd()
 	t.begin_fill()
-	t.goto(pos[0]+100, pos[1]+0)
+	t.goto(pos[0]+100, pos[1])
 	t.goto(pos[0]+100, pos[1]+100)
-	t.goto(pos[0]+0, pos[1]+100)
+	t.goto(pos[0], pos[1]+100)
 	t.goto(pos)
 	t.end_fill()
 	t.pu()
@@ -64,6 +64,20 @@ def domki(n):
 	t.end_fill()
 	t.pu()
 	############
+
+	### DACH ###
+	t.fillcolor('red')
+	t.goto(pos[0], pos[1]+100)
+	t.pd()
+	t.begin_fill()
+	t.goto(pos[0]+100, pos[1]+100)
+	t.goto(pos[0]+140, pos[0]+140)
+	t.goto(pos[0]+40, pos[1]+140)
+	t.goto(pos[0], pos[1]+100)
+	t.end_fill()
+	t.pu()
+	############
+
 
 
 
