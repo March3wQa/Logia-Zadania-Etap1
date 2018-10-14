@@ -78,6 +78,19 @@ def domki(n):
 	t.pu()
 	############
 
+	### ŚCIANA ###
+	t.fillcolor('gray')
+	t.goto(pos[0]+100, pos[1])
+	t.pd()
+	t.begin_fill()
+	t.goto(pos[0]+140, pos[1]+40)
+	t.goto(pos[0]+140, pos[1]+140)
+	t.goto(pos[0]+100, pos[1]+100)
+	t.goto(pos[0]+100, pos[1])
+	t.end_fill()
+	t.pu()
+	##############
+
 
 
 
