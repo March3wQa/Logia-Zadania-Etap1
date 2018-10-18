@@ -1,12 +1,17 @@
 import turtle
+import math
+
 t = turtle.Turtle()
 t.pu()
 t.goto(-300, 225)
-DEBUG = True
+
+def height(a):
+    return (a*math.sqrt(3))/2
+
 def shapes(self, shape):
     if shape == 'sqr-b':
         self.pd()
-        self.fillcolor('cyan')
+        self.fillcolor('blue')
         self.begin_fill()
         for _ in range(4):
             self.fd(30)
@@ -73,18 +78,49 @@ def structures(self, structure):
         self.rt(90)
         self.fd(60)
         self.lt(90)
-    if structures == 'row':
-        structures(self, 'hor')
-        self.fd(15)
-        self.rt
 
-t.structures = structures
+def row(self, x, other = False):
+    if other == False:
+        for _ in range(x):
+            structures(self, 'hor')
+            self.fd(15)
+            self.rt(90)
+            self.fd(2*30 + height(30))
+            self.lt(90)
+            structures(self, 'ver')
+            self.rt(90)
+            self.fd(30 + height(30))
+            self.lt(90)
+            self.bk(15)
+    if other == True:
+        for _ in range(x):
+            structures(self, 'ver')
+            self.rt(90)
+            self.fd(30 + height(30))
+            self.lt(90)
+            self.bk(15)
+            structures(self, 'hor')
+            self.fd(15)
+            self.rt(90)
+            self.fd(2*30 + height(30))
+            self.lt(90)
 
+t.row = row
 
 def parkiet():
-    t.structures(t, 'hor')
-
+    for _ in range(3):
+        t.row(t, 3)
+        t.lt(90)
+        t.fd(9*30 + 6*height(30) + 15)
+        t.rt(90)
+        t.fd(2*30 + height(30))
+        t.rt(90)
+        t.fd(30)
+        t.lt(90)
+        t.row(t, 3, True)
+        t.lt(90)
+        t.fd(9*30 + 6*height(30) + 15)
+        t.rt(90)
+        t.fd(30 + height(30))
 
 parkiet()
-while DEBUG:
-    pass
