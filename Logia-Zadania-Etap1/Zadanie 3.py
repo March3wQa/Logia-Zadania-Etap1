@@ -122,5 +122,3 @@ def parkiet():
         t.fd(9*30 + 6*height(30) + 15)
         t.rt(90)
         t.fd(30 + height(30))
-
-parkiet()
